@@ -49,7 +49,7 @@ class VCFsplitter:
 			for i in range(self.linestart, self.lineend+1):
 				f.write(self.fullfile[i])
 
-	def split(self, overwrite=False ):
+	def split(self, overwrite=False ) -> int:
 		"split the fullfile into small files"
 		# analyze the full file
 		countername = 0	# let's count vcard names

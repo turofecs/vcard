@@ -10,6 +10,8 @@ create single-person vcard files from a multi-person vcard file. Commandline too
 
 Sometimes, contacts are disapperaing from your macOS address book. It is recommendable to have a backup ready then, a multi-person vcard file or contact archive. Best practice is a multi-person vcard file. For being able to retrieve single contacts, this tool will create single files from your contacts, easy to restore and re-import.
 
+This approach permits as well a versionized backup of your contacts (using the --force).
+
 # install
 
 Clone the [https://github.com/turofecs/vcard.git](https://github.com/turofecs/vcard.git) repository into a folder of your choice. On commandline, this works like this (you need git to be installed):
@@ -52,6 +54,10 @@ rookie@MBP vcard % python3 vcf_split.py 20230216.vcf
 407 names written to 20230216
 rookie@MBP vcard %
 ```
+
+If you want to get more information, use the --verbose switch.
+
+Setting 
 
 # license
 
