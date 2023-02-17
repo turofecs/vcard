@@ -74,7 +74,7 @@ if __name__ == "__main__":
 	parser.add_argument("file", help="the multi-person VCARD file")
 	parser.add_argument('-f', '--force', action='store_true', help='overwrite existing files')
 	parser.add_argument('-v', '--verbose', action='count', default=0, help='get more info')
-	parser.add_argument('--dir', action='store', help='specify target folder')
+	parser.add_argument('--dir', action='store', help='specify target folder DIR')
 	args = parser.parse_args()
 
 	logging.basicConfig(level=max(LOGGING_DEFAULT - 10 * args.verbose, 1), format=LOGGING_FORMAT)
